@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap&#39;');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Source Sans Pro", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 1.5;
+    color: gray;
+}
+
+img {
+    width: 40%;
+}
+
+ol, ul, dl {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+footer,
+figcaption,
+form,
+main,
+main > section,
+main > section > article,
+main ul,
+header > section {
+    display: flex;
+    flex-direction: column;
+}
+
+main,
+main > section,
+main > section > section,
+main > section > article {
+    align-items: center;
+}
+
+header {
+    display: flex;
+    background-image: url("/img/bg-header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header > section {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80,80,80,.8);
+}
+
+main article > h3 {
+    color: dimgray;
+    text-transform: uppercase;
+}
+
+main > section:nth-child(odd) {
+    background-color: ghostwhite;
+}
+
+/* MOBILE VERSION */
+@media (min-width: 200px) {
+    
+    main > section {
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+
+    main > section > section,
+    main > section > article {
+        width: 80%;
+    }
+
+    .features > article,
+    .about > article,
+    .team > article,
+    .portfolio > article,
+    .faq > article,
+    .contact > article {
+        text-align: center;
+    }
+ 
+    /* FEATURES */
+    .features {
+        row-gap: 10vh;
+    }
+
+    .features aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2vh;
+    }
+
+    .features > section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .features aside > p {
+        text-align: center;
+    }
+
+    .features i {
+        background-color: darkorange;
+        color: white;
+        border: 3px solid darkorange;
+        border-radius: 50%;
+        height: 15vh;
+        width: 15vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+    }
+}
