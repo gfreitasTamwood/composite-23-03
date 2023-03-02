@@ -180,6 +180,37 @@ main > section:nth-child(odd) {
         font-size: 24px;
     }
 
+    /* PORTFOLIO */
+    .portfolio {
+        row-gap: 10vh;
+    }
+
+    .portfolio > article {
+        width: 50%;
+    }
+
+    .portfolio h3 {
+        color: dimgray;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .portfolio p {
+        color: dimgray;
+    }
+
+    .portfolio figure {
+        display: flex;
+        flex-wrap: wrap;
+        width: 95%;
+        row-gap: 1vh;
+    }
+
+    .portfolio img {
+        width: 100%;
+        height: 30vh;
+    }
+
     /* CONTACT */
     .contact {
         background-color: rgb(40,40,40);
