@@ -75,6 +75,57 @@ main > section:nth-child(odd) {
 
 /* MOBILE VERSION */
 @media (min-width: 200px) {
+
+    /* NAVIGATION MENU */
+    nav > ul {
+        display: none;
+    }
+
+    nav {
+        min-height: 10vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-self: center;
+        position: relative;
+    }
+
+    nav > h2 {
+        color: dimgray;
+        font-size: 36px;
+    }
+
+    details {
+        width: 100%;
+        text-align: right;
+        position: absolute;
+    }
+
+    details > ul {
+        padding-top: 2vh;
+        width: 100%;
+        position: absolute;
+    }
+
+    details li {
+        background-color: white;
+        display: flex;
+    }
+
+    details a {
+        font-size: 20px;
+        color: darkorange;
+        width: 100%;
+        padding: 5%;
+        border-bottom: 4px solid darkorange;
+        text-align: left;
+    }
+
+    summary {
+        padding-right: 5vw;
+        font-size: 26px;
+    }
     
     main > section {
         padding-top: 10vh;
