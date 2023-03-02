@@ -335,6 +335,55 @@ main > section:nth-child(odd) {
         width: 90%;
     }
 
+    /* TEAM */
+    .team {
+        row-gap: 5vh;
+    }
+
+    .team > section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6vh;
+        align-items: center;
+    }
+
+    .team figure {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+        align-items: center;
+    }
+
+    .team figcaption {
+        row-gap: 5vh;
+    }
+
+    .team figcaption,
+    .team aside {
+        width: 80%;
+        align-items: center;
+    }
+
+    .team img {
+        width: 100%;
+    }
+
+    .team small {
+        font-size: 16px;
+        text-transform: uppercase;
+    }
+
+    .team h4 {
+        text-align: center;
+        text-transform: uppercase;
+        background-color: white;
+        color: darkorange;
+    }
+
+    .team ul {
+        display: none;
+    }
+
     /* PORTFOLIO */
     .portfolio {
         row-gap: 10vh;
