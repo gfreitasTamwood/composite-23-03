@@ -61,7 +61,7 @@ header {
 header > section {
     width: 100%;
     height: 100%;
-    background-color: rgba(80,80,80,.8);
+    background-color: rgba(38, 120, 197, 0.2);
 }
 
 main article > h3 {
@@ -85,7 +85,6 @@ main > section:nth-child(odd) {
         min-height: 10vh;
         width: 100%;
         display: flex;
-        justify-content: space-between;
         align-items: center;
         align-self: center;
         position: relative;
@@ -125,8 +124,46 @@ main > section:nth-child(odd) {
     summary {
         padding-right: 5vw;
         font-size: 26px;
+        color: darkorange;
+    }
+
+    /* HEADER */
+    header {
+        height: 45vh;
+        color: whitesmoke;
+        text-align: center;
+    }
+
+    header > section {
+        align-items: center;
+        justify-content: center;
+        row-gap: 5vh;
+    }
+
+    header aside {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    header h2 {
+        font-size: 20px;
+    }
+
+    header h2,
+    header h1 {
+        text-transform: uppercase;
     }
     
+    header a {
+        background-color: darkorange;
+        color: whitesmoke;
+        padding: 2%;
+        text-transform: uppercase;
+        width: 30%;
+        font-weight: 700;
+    }
+
     main > section {
         padding-top: 10vh;
         padding-bottom: 10vh;
