@@ -92,6 +92,36 @@ main > section:nth-child(odd) {
     .contact > article {
         text-align: center;
     }
+
+    /* FOOTER */
+    footer {
+        background-color: rgb(30,30,30);
+        padding-top: 5%;
+        padding-bottom: 5%;
+        align-items: center;
+        row-gap: 3vh;
+    }
+
+    footer ul {
+        display: flex;
+        list-style-type: none;
+        column-gap: 5vw;
+    }
+
+    footer [class*="fa-"] {
+        width: 5vh;
+        height: 5vh;
+        border: 1px solid whitesmoke;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: whitesmoke;
+    }
+
+    footer p {
+        color: whitesmoke;
+    }
  
     /* FEATURES */
     .features {
