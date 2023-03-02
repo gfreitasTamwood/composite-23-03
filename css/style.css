@@ -23,7 +23,9 @@ img {
     width: 40%;
 }
 
-ol, ul, dl {
+ol, ul, dl, p, h1,
+h2, h3, h4, h5, h6,
+figure, address {
     margin: 0;
     padding: 0;
 }
@@ -100,6 +102,7 @@ main > section:nth-child(odd) {
         padding-bottom: 5%;
         align-items: center;
         row-gap: 3vh;
+        border-top: 1px solid gray;
     }
 
     footer ul {
@@ -120,6 +123,25 @@ main > section:nth-child(odd) {
     }
 
     footer p {
+        color: whitesmoke;
+    }
+
+    address {
+        font-size: 14px;
+        color: whitesmoke;
+    }
+
+    form,
+    form > section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+
+    input, textarea {
+        padding: 5%;
+        background-color: transparent;
+        border: 1px solid darkgray;
         color: whitesmoke;
     }
  
@@ -157,4 +179,79 @@ main > section:nth-child(odd) {
         align-items: center;
         font-size: 24px;
     }
+
+    /* CONTACT */
+    .contact {
+        background-color: rgb(40,40,40);
+        row-gap: 10vh;
+    }
+
+    .contact aside {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .contact > article {
+        row-gap: 3vh;
+    }
+
+    .contact h3 {
+        font-size: 30px;
+        font-weight: 400;
+        color: whitesmoke;
+    }
+
+    .contact p {
+        color: whitesmoke;
+    }
+
+    .contact ul {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    .contact li {
+        display: flex;
+        column-gap: 3vw;
+        align-items: center;
+    }
+
+    .contact li:first-child > a {
+        color: whitesmoke;
+    }
+
+    .contact i {
+        color: darkorange;
+    }
+
+    .contact a {
+        color: darkorange;
+    }
+
+    .contact > section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .contact > section > article {
+        width: 100%;
+    }
+
+    .contact h4 {
+        font-size: 30px;
+        color: whitesmoke;
+        text-transform: uppercase;
+    }
+
+    [type="submit"] {
+        text-transform: uppercase;
+        width: 70%;
+    }
+
+    ::placeholder {
+        color: whitesmoke;
+    } 
 }
